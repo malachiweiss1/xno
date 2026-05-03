@@ -1,3 +1,8 @@
+# Flask app that serves a single-page Tic-Tac-Toe (X & O) game.
+# The entire game runs client-side in JavaScript: it manages board state,
+# detects wins/draws using all 8 possible lines, tracks a scoreboard across
+# rounds, and includes a minimax-based AI opponent. Players can toggle between
+# 2-player mode and vs-AI mode. Deployed on Vercel via vercel.json.
 from flask import Flask, render_template_string
 
 app = Flask(__name__)
